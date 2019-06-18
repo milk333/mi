@@ -1,0 +1,70 @@
+/*-----------------------
+　全体
+　https://www.colorhexa.com/b2edd7：カラー
+-----------------------*/
+    html,body{
+    width: 100%;
+    margin: auto;
+    background-image: url(images/aq.jpg);
+    background-repeat: repeat;
+    }
+    .bkRGBA{
+        /* 背景画像の透過用css */
+        height: 100%;
+        background: rgba(255,255,255,0.6);
+      }
+/*-----------------------
+　ヘッダー
+-----------------------*/
+
+header{
+    background-color: rgba(237,178,200, 0.3);
+    height: 70px;
+}
+
+header p{
+    color: #e282a6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 28px;
+    line-height: 70px;
+    text-align: left;
+    margin: 0 0 0 30px;  
+}
+
+/*-----------------------
+　メイン
+-----------------------*/
+
+.main{
+    color: #2fc78f;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.top_img{
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 2% 0% 0% 0%;
+}
+
+/*-----------------------
+　フッター
+-----------------------*/
+
+footer{
+    background-color: rgba(178, 237, 215, 0.5);
+    height: 50px;
+    margin: 0;
+}
+
+footer p{
+    color: #59d8a9; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0;
+}
