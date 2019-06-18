@@ -1,27 +1,33 @@
 /*-----------------------
 　全体
+　https://www.colorhexa.com/b2edd7：カラー
 -----------------------*/
     html,body{
     width: 100%;
     margin: auto;
-    background-image: url(images/background.gif);
+    background-image: url(images/aq.jpg);
     background-repeat: repeat;
     }
+    .bkRGBA{
+        /* 背景画像の透過用css */
+        height: 100%;
+        background: rgba(255,255,255,0.6);
+      }
 /*-----------------------
 　ヘッダー
 -----------------------*/
 
 header{
-    background-color: rgba(255, 255, 255, 0.692);
+    background-color: rgba(237,178,200, 0.3);
     height: 70px;
 }
 
 header p{
-    color: lightblue;
+    color: #e282a6;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 25px;
+    font-size: 28px;
     line-height: 70px;
-    text-align: center;
+    text-align: left;
     margin: 0 0 0 30px;  
 }
 
@@ -30,7 +36,7 @@ header p{
 -----------------------*/
 
 .main{
-    color: rgb(91, 168, 18);
+    color: #2fc78f;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 17px;
     line-height: 28px;
@@ -49,13 +55,13 @@ header p{
 -----------------------*/
 
 footer{
-    background-color: rgba(0, 161, 54, 0.5);
+    background-color: rgba(178, 237, 215, 0.5);
     height: 50px;
     margin: 0;
 }
 
 footer p{
-    color: white; 
+    color: #59d8a9; 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
     line-height: 50px;
