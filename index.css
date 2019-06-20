@@ -7,7 +7,11 @@
     margin: auto;
     background-image: url(images/aq.jpg);
     background-repeat: repeat;
+    height: 100%;
+    margin: 0;
+    padding: 0;
     }
+    
     .bkRGBA{
         /* 背景画像の透過用css */
         height: 100%;
@@ -30,6 +34,30 @@ header p{
     text-align: left;
     margin: 0 0 0 30px;  
 }
+
+  #menu_pc ul {
+    float: right;
+    margin-top: 0px;
+  }
+
+  #menu_pc ul li {
+    float: left;
+    margin-right: 40px;
+    list-style-type: none;
+    font-size: 20px;
+    margin-top: 4%;
+  }
+
+  #menu_pc ul li a {
+    color: #e282a6;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+  }
+
+  #menu_pc ul li a:hover {
+    color: #bbffe6;
+  }
 
 /*-----------------------
 　メイン
