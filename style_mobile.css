@@ -1,0 +1,213 @@
+/*-----------------------
+　全体
+　https://www.colorhexa.com/b2edd7：カラー
+-----------------------*/
+/* スマートフォン用CSS */
+@media screen and (max-width: 640px) {
+ 
+img{
+max-width: 100%;
+height: auto;
+width /***/:auto;
+}
+
+    html,body{
+    width: 100%;
+    margin: auto;
+    background-image: url(images/aq.jpg);
+    background-repeat: repeat;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    }
+
+    .bkRGBA{
+        /* 背景画像の透過用css */
+        height: 2000px;
+        background: rgba(255,255,255,0.6);
+      }
+/*-----------------------
+　ヘッダー
+-----------------------*/
+
+header p{
+    color: #e282a6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 28px;
+    line-height: 70px;
+    text-align: left;
+    margin: 0 0 0 30px;  
+    float: left;
+}
+
+#menu_pc {
+  background-image: url("images/Line.png");
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  height: 60px;
+  background-attachment: fixed;
+  width: 100%;
+  padding-top:0px;
+  position: fixed;
+}
+  #menu_pc ul {
+    float: right;
+    margin-top: 0px;
+  }
+
+  #menu_pc ul li {
+    float: left;
+    margin-right: 40px;
+    list-style-type: none;
+    font-size: 20px;
+    margin-top: 4%;
+  }
+
+  #menu_pc ul li a {
+    color: #e282a6;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #ffd7e5;
+  }
+
+  #menu_pc ul li a:hover {
+    color: #ffd9ec;
+  }
+
+  .fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+/*-----------------------
+　メイン
+-----------------------*/
+
+.textbox{
+	background-color: rgba(237,178,200, 0.3);
+	padding: 30px;
+  }
+  
+  .textbox p{
+    color: #e282a6;
+    line-height:40px;
+    text-align:center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5% 0% 0% 0%;
+    }
+
+.main{
+    color: #2fc78f;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    line-height: 28px;
+    text-align: center;
+    padding: 0% 0% 2% 0%;
+}
+
+.top_img{
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 7% 0% 0% 0%;
+}
+
+.frame {
+  display: inline-block;
+  position: relative;
+  width:250px;
+  height:380px;
+  z-index: 0;
+  }
+
+  .frame:after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transform: rotate(3deg); /* 回転させる */
+  background: #fff;
+  z-index: -2;
+  }
+
+  .frame02 {
+    display: inline-block;
+    position: relative;
+    width:380px;
+    height:250px;
+    z-index: 0;
+    }
+  
+    .frame02:after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transform: rotate(3deg); /* 回転させる */
+    background: #fff;
+    z-index: -2;
+    }
+
+/*-----------------------
+　フッター
+-----------------------*/
+
+footer{
+    background-color: rgba(178, 237, 215, 0.5);
+    height: 50px;
+    margin: 0;
+}
+
+footer p{
+    color: #59d8a9; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0;
+}
+
+/*ふわっとアニメーション*/
+.animation {
+    margin: 0;
+    }
+    
+    .fadeInDown {
+     -webkit-animation-fill-mode:both;
+     -ms-animation-fill-mode:both;
+     animation-fill-mode:both;
+     -webkit-animation-duration:2s;
+     -ms-animation-duration:2s;
+     animation-duration:2s;
+     -webkit-animation-name: fadeInDown;
+     animation-name: fadeInDown;
+     visibility: visible !important;
+    }
+    @-webkit-keyframes fadeInDown {
+     0% { opacity: 0; -webkit-transform: translateY(-20px); 
+     }
+     100% { opacity: 1; -webkit-transform: translateY(0); 
+     }
+    }
+    @keyframes fadeInDown {
+     0% { opacity: 0; -webkit-transform: translateY(-20px); 
+     -ms-transform: translateY(-20px); transform: translateY(-20px); 
+     }
+     100% { 
+     opacity: 1; 
+     -webkit-transform: translateY(0); 
+     -ms-transform: translateY(0); 
+     transform: translateY(0); }
+    }
+  }
